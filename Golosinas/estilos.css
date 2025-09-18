@@ -1,0 +1,149 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  color: #222;
+}
+
+header {
+  background: linear-gradient(90deg, #2574d1 60%, #e53935 100%);
+  color: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+header .rosquilla {
+  width: 80px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 2px 12px #2222;
+}
+
+#filtros {
+  background: #fff;
+  border-bottom: 3px solid #e53935;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  justify-content: center;
+}
+
+#catalogo {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.producto {
+  background: #fff;
+  border-radius: 12px;
+  border: 2px solid #2574d1;
+  box-shadow: 0 2px 8px #2221;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.producto img {
+  max-width: 120px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  border: 2px solid #e53935;
+}
+
+.producto h3 {
+  margin: 0.5rem 0 0.2rem 0;
+  color: #2574d1;
+}
+
+.producto p {
+  margin: 0.3rem 0;
+}
+
+.producto .precio {
+  color: #e53935;
+  font-weight: bold;
+}
+
+.producto button {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.producto button:hover {
+  background: #2574d1;
+}
+
+#carrito {
+  flex: 1;
+  background: #fff;
+  border: 2px solid #e53935;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #2221;
+  padding: 1rem;
+  min-width: 250px;
+}
+
+#carrito h2 {
+  color: #2574d1;
+  margin-top: 0;
+}
+
+#items-carrito {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+#items-carrito li {
+  border-bottom: 1px dashed #2574d1;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#total {
+  font-size: 1.2rem;
+  color: #e53935;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#vaciar-carrito {
+  background: #2574d1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#vaciar-carrito:hover {
+  background: #e53935;
+}
+
+footer {
+  background: #2574d1;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
